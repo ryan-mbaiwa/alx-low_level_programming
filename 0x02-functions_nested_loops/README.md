@@ -1,1 +1,1 @@
-This repo contains functions and nested loops
+Project on nested loops
