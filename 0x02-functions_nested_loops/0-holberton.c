@@ -1,20 +1,20 @@
 #include "holberton.h"
 
 /**
- * main - Entry point
- *
- * putchar - to print "holberton"
+ * main - prints holberton, followed by a new line
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-char holberton[9] = "Holberton";
-int i;
-for (i = 0; i < 9; i++)
-{
-_putchar(holberton[i]);
-}
-_putchar('\n');
-return (0);
+	char str[] = "Holberton";
+	int i, n;
+
+	n = (sizeof(str) / sizeof(str[0])) - 1;
+	for (i = 0; i < n; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
